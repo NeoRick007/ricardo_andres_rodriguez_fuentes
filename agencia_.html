@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes 2024</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a la Agencia de Viajes</h1>
+        <h2>Navega y Gestiona tus Reservas</h2>
+        <div class="nav-links">
+            <a href="views/agregar_vuelo.html">Agregar Vuelo</a>
+            <a href="views/agregar_hotel.html">Agregar Hotel</a>
+            <a href="mostrar_vuelos.php">Mostrar Vuelos</a>
+            <a href="mostrar_hoteles.php">Mostrar Hoteles</a>
+        </div>
+        <h2>Búsqueda Avanzada de Vuelos</h2>
+        <form id="search-form" onsubmit="event.preventDefault(); searchFlights();">
+            <label for="origin">Origen:</label>
+            <input type="text" id="origin" name="origin">
+            <label for="destination">Destino:</label>
+            <input type="text" id="destination" name="destination">
+            <label for="start-date">Fecha de Inicio:</label>
+            <input type="date" id="start-date" name="start-date">
+            <label for="end-date">Fecha de Fin:</label>
+            <input type="date" id="end-date" name="end-date">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="results-container">
+            <!-- Los resultados de la búsqueda se mostrarán aquí -->
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
